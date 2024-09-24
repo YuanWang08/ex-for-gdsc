@@ -111,7 +111,7 @@
         <img
           src="https://picsum.photos/200/200"
           alt=""
-          class="rounded-full relative w-[28vw] cursor-pointer duration-400 ease-in-out hover:scale-105 transition duration-300"
+          class="rounded-full relative w-[400px] cursor-pointer duration-400 ease-in-out hover:scale-105 transition duration-300 hover:shadow-yellow-300 hover:shadow-2xl"
         />
       </div>
     </section>
@@ -119,122 +119,241 @@
     <!-- 經歷 -->
     <section class="pt-8">
       <h2 class="text-4xl">經歷</h2>
-      <div>
-        <p>2021</p>
-        <p>High School</p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quae
-          laborum provident, recusandae magnam alias at architecto officiis
-          sapiente tempore excepturi fugiat repellendus dolore inventore vero.
-          Iure, quia! Asperiores, autem.
-        </p>
-      </div>
-      <div>
-        <p>2022</p>
-        <p>University</p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo quae
-          laborum provident, recusandae magnam alias at architecto officiis
-          sapiente tempore excepturi fugiat repellendus dolore inventore vero.
-          Iure, quia! Asperiores, autem.
-        </p>
+
+      <div class="pl-4 pt-4 flex flex-col">
+        <!-- Item 1 -->
+        <div class="relative flex space-x-4">
+          <div class="">
+            <div class="h-full w-1 bg-yellow-300"></div>
+            <div
+              class="absolute bg-yellow-300 w-4 h-4 top-0 left-0 rounded-full transform -translate-x-1.5 translate-y-1"
+            ></div>
+          </div>
+          <div class="pb-4">
+            <p class="pb-3 pl-1">2021</p>
+            <div class="border border-yellow-300 rounded-xl p-3">
+              <p>High School</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                quae laborum provident, recusandae magnam alias at architecto
+                officiis sapiente tempore excepturi fugiat repellendus dolore
+                inventore vero. Iure, quia! Asperiores, autem.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="relative flex space-x-4">
+          <div class="">
+            <div class="h-full w-1 bg-yellow-300"></div>
+            <div
+              class="absolute bg-yellow-300 w-4 h-4 top-0 left-0 rounded-full transform -translate-x-1.5 translate-y-1"
+            ></div>
+          </div>
+          <div class="pb-4">
+            <p class="pb-3 pl-1">2022</p>
+            <div class="border border-yellow-300 rounded-xl p-3">
+              <p>University</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                quae laborum provident, recusandae magnam alias at architecto
+                officiis sapiente tempore excepturi fugiat repellendus dolore
+                inventore vero. Iure, quia! Asperiores, autem.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- 技能 -->
-    <section>
-      <div>
-        <p>HTML</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eligendi
-          nobis modi voluptas. Numquam unde ratione distinctio cupiditate
-          debitis perspiciatis consequuntur, earum veniam laudantium culpa,
-          totam sed assumenda asperiores rem!
-        </p>
+    <section class="pt-8">
+      <h2 class="text-4xl">技能</h2>
+      <div class="flex flex-wrap justify-center items-center gap-4 pt-4">
+        <div class="w-[180px] flex flex-col justify-center items-center">
+          <img
+            src="https://picsum.photos/200/200"
+            alt=""
+            class="rounded-full w-full h-auto shadow-lg cursor-pointer transition-shadow duration-400 ease-in-out hover:shadow-[0_0_25px_var(--main-color),0_0_50px_var(--main-color),0_0_100px_var(--main-color)]"
+          />
+          <p class="mt-2">HTML</p>
+        </div>
+        <div class="w-[180px] flex flex-col justify-center items-center">
+          <img
+            src="https://picsum.photos/200/200"
+            alt=""
+            class="rounded-full w-full h-auto shadow-lg cursor-pointer transition-shadow duration-400 ease-in-out hover:shadow-[0_0_25px_var(--main-color),0_0_50px_var(--main-color),0_0_100px_var(--main-color)]"
+          />
+          <p class="mt-2">Javascript</p>
+        </div>
+        <div class="w-[180px] flex flex-col justify-center items-center">
+          <img
+            src="https://picsum.photos/200/200"
+            alt=""
+            class="rounded-full w-full h-auto shadow-lg cursor-pointer transition-shadow duration-400 ease-in-out hover:shadow-[0_0_25px_var(--main-color),0_0_50px_var(--main-color),0_0_100px_var(--main-color)]"
+          />
+          <p class="mt-2">CSS</p>
+        </div>
+        <div class="w-[180px] flex flex-col justify-center items-center">
+          <img
+            src="https://picsum.photos/200/200"
+            alt=""
+            class="rounded-full w-full h-auto shadow-lg cursor-pointer transition-shadow duration-400 ease-in-out hover:shadow-[0_0_25px_var(--main-color),0_0_50px_var(--main-color),0_0_100px_var(--main-color)]"
+          />
+          <p class="mt-2">TailwindCSS</p>
+        </div>
       </div>
-      <div>
-        <p>CSS</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eligendi
-          nobis modi voluptas. Numquam unde ratione distinctio cupiditate
-          debitis perspiciatis consequuntur, earum veniam laudantium culpa,
-          totam sed assumenda asperiores rem!
-        </p>
-      </div>
-      <div></div>
     </section>
 
     <!-- 作品集 -->
-    <section>
-      <div>
-        <img src="https://picsum.photos/200/200" alt="" />
-        <p>Project 1</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quam
-          vitae reprehenderit cumque inventore exercitationem dolorem cum,
-          perferendis consectetur distinctio quaerat molestiae harum id
-          quisquam, iusto voluptates. Fugiat, nobis deserunt!
-        </p>
-      </div>
-      <div>
-        <img src="https://picsum.photos/200/200" alt="" />
-        <p>Project 2</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil
-          iste vitae, eum ad aliquid harum itaque rerum nulla reiciendis ipsam
-          numquam dolor facere quod placeat quae quibusdam quisquam magnam?
-        </p>
-      </div>
-      <div>
-        <img src="https://picsum.photos/200/200" alt="" />
-        <p>Project 3</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil
-          iste vitae, eum ad aliquid harum itaque rerum nulla reiciendis ipsam
-          numquam dolor facere quod placeat quae quibusdam quisquam magnam?
-        </p>
+    <section class="pt-8">
+      <h2 class="text-4xl">作品集</h2>
+      <div
+        class="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4 pt-4"
+      >
+        <!-- Item 1 -->
+        <div class="w-full h-[30vh] md:w-[45%] bg-black flex p-4 rounded-3xl">
+          <div class="flex flex-col justify-center items-center w-[40%]">
+            <img
+              src="https://picsum.photos/200/200"
+              alt=""
+              class="rounded-full w-32 h-32 object-cover"
+            />
+            <p class="mt-2 text-white">Project 1</p>
+          </div>
+          <div class="pl-4 w-[60%] flex items-center">
+            <p class="text-white">
+              用Html標籤製作的網頁，這是一個簡單的網頁，用來展示Html的基本標籤
+            </p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="w-full h-[30vh] md:w-[45%] bg-black flex p-4 rounded-3xl">
+          <div class="flex flex-col justify-center items-center w-[40%]">
+            <img
+              src="https://picsum.photos/200/200"
+              alt=""
+              class="rounded-full w-32 h-32 object-cover"
+            />
+            <p class="mt-2 text-white">Project 2</p>
+          </div>
+          <div class="pl-4 w-[60%] flex items-center">
+            <p class="text-white">
+              用Html標籤製作的網頁，這是一個簡單的網頁，用來展示Html的基本標籤
+            </p>
+          </div>
+          <!-- Item 3 -->
+        </div>
+        <!-- Item 3 -->
+        <div class="w-full h-[30vh] md:w-[45%] bg-black flex p-4 rounded-3xl">
+          <div class="flex flex-col justify-center items-center w-[40%]">
+            <img
+              src="https://picsum.photos/200/200"
+              alt=""
+              class="rounded-full w-32 h-32 object-cover"
+            />
+            <p class="mt-2 text-white">Project 3</p>
+          </div>
+          <div class="pl-4 w-[60%] flex items-center">
+            <p class="text-white">
+              用Html標籤製作的網頁，這是一個簡單的網頁，用來展示Html的基本標籤
+            </p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="w-full h-[30vh] md:w-[45%] bg-black flex p-4 rounded-3xl">
+          <div class="flex flex-col justify-center items-center w-[40%]">
+            <img
+              src="https://picsum.photos/200/200"
+              alt=""
+              class="rounded-full w-32 h-32 object-cover"
+            />
+            <p class="mt-2 text-white">Project 3</p>
+          </div>
+          <div class="pl-4 w-[60%] flex items-center">
+            <p class="text-white">
+              用Html標籤製作的網頁，這是一個簡單的網頁，用來展示Html的基本標籤
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- 聯絡我 -->
-    <section>
-      <form>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <textarea placeholder="Message"></textarea>
-        <button>Send</button>
+    <section class="pt-8">
+      <h2 class="text-4xl text-center mb-6">聯絡我</h2>
+      <form class="flex flex-col space-y-4 max-w-lg mx-auto">
+        <input
+          type="text"
+          placeholder="Name"
+          class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300"
+        />
+        <textarea
+          placeholder="Message"
+          class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300 h-32 resize-none"
+        ></textarea>
+        <a
+          href="#"
+          class="bg-yellow-300 text-black shadow-lg rounded-full w-full h-auto py-3 flex items-center justify-center text-sm font-semibold transition-transform transform hover:scale-105 hover:shadow-2xl"
+          >Send</a
+        >
       </form>
     </section>
 
-    <footer>
+    <footer class="flex flex-col justify-center items-center pt-6">
       <div class="">
         <a href="#"><i class="bx bxl-linkedin"></i></a>
         <a href="#"><i class="bx bxl-github"></i></a>
         <a href="#"><i class="bx bxl-instagram-alt"></i></a>
         <a href="#"><i class="bx bxl-twitter"></i></a>
       </div>
-      <ul class="list">
+      <ul class="flex justify-center items-center space-x-6 pt-3">
         <li>
-          <a href="#">主頁</a>
+          <a
+            href="#"
+            class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
+            >主頁</a
+          >
         </li>
 
         <li>
-          <a href="#">經歷</a>
+          <a
+            href="#"
+            class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
+            >經歷</a
+          >
         </li>
 
         <li>
-          <a href="#">技能</a>
+          <a
+            href="#"
+            class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
+            >技能</a
+          >
         </li>
 
         <li>
-          <a href="#">作品集</a>
+          <a
+            href="#"
+            class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
+            >作品集</a
+          >
         </li>
 
         <li>
-          <a href="#">聯絡我</a>
+          <a
+            href="#"
+            class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
+            >聯絡我</a
+          >
         </li>
       </ul>
-      <p>© 2021 English Vegetable Cheater Pro</p>
+      <p class="text-sm pt-4 pb-4">© 2021 English Vegetable Cheater Pro</p>
     </footer>
   </body>
 
