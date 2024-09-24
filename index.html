@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>個人履歷</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {};
+    </script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -28,27 +31,27 @@
 
       <nav class="space-x-4 md:block hidden">
         <a
-          href=""
+          href="#home"
           class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
           >主頁</a
         >
         <a
-          href=""
+          href="#experience"
           class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
           >經歷</a
         >
         <a
-          href=""
+          href="#skills"
           class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
           >技能</a
         >
         <a
-          href=""
+          href="#portfolio"
           class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
           >作品集</a
         >
         <a
-          href=""
+          href="#contact"
           class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
           >聯絡我</a
         >
@@ -56,14 +59,19 @@
     </header>
 
     <!-- 主頁 -->
-    <section class="flex flex-col-reverse md:flex-row pt-4">
+    <section id="home" class="flex flex-col-reverse md:flex-row pt-4">
       <div class="w-full pt-4 md:w-[60%]">
         <div>
           <p class="text-6xl">
             Hi, It's <span class="text-yellow-300">Vegetable</span>
           </p>
           <p class="text-4xl pt-3">
-            I'm a <span class="text-yellow-300">Cheater Pro</span>
+            I'm a
+            <span
+              class="text-yellow-300"
+              style="text-shadow: 0 0 25px rgba(255, 255, 0, 0.7)"
+              >Cheater Pro</span
+            >
           </p>
           <p class="text-2xl pt-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet vel
@@ -74,31 +82,31 @@
         </div>
 
         <!-- icons -->
-        <div class="flex items-center space-x-3 pt-3">
+        <div class="flex items-center space-x-4 pt-4">
           <a
             href="#"
-            class="bg-yellow-300 text-black shadow-lg rounded-full w-10 h-10 flex items-center justify-center text-xs font-semibold transition-transform transform hover:scale-105 hover:shadow-2xl"
-            ><i class="bx bxl-linkedin text-lg"></i
+            class="flex justify-center items-center w-18 h-18 bg-transparent border-2 border-yellow-300 text-yellow-300 text-3xl rounded-full transition-transform duration-300 ease-in-out hover:text-white hover:scale-125 hover:-translate-y-1 hover:bg-yellow-300 hover:shadow-lg"
+            ><i class="bx bxl-facebook-square p-1.5"></i
           ></a>
           <a
             href="#"
-            class="bg-yellow-300 text-black shadow-lg rounded-full w-10 h-10 flex items-center justify-center text-xs font-semibold transition-transform transform hover:scale-105 hover:shadow-2xl"
-            ><i class="bx bxl-github text-lg"></i
+            class="flex justify-center items-center w-18 h-18 bg-transparent border-2 border-yellow-300 text-yellow-300 text-3xl rounded-full transition-transform duration-300 ease-in-out hover:text-white hover:scale-125 hover:-translate-y-1 hover:bg-yellow-300 hover:shadow-lg"
+            ><i class="bx bxl-instagram-alt p-1.5"></i
           ></a>
           <a
             href="#"
-            class="bg-yellow-300 text-black shadow-lg rounded-full w-10 h-10 flex items-center justify-center text-xs font-semibold transition-transform transform hover:scale-105 hover:shadow-2xl"
-            ><i class="bx bxl-instagram-alt text-lg"></i
+            class="flex justify-center items-center w-18 h-18 bg-transparent border-2 border-yellow-300 text-yellow-300 text-3xl rounded-full transition-transform duration-300 ease-in-out hover:text-white hover:scale-125 hover:-translate-y-1 hover:bg-yellow-300 hover:shadow-lg"
+            ><i class="bx bxl-github p-1.5"></i
           ></a>
           <a
             href="#"
-            class="bg-yellow-300 text-black shadow-lg rounded-full w-10 h-10 flex items-center justify-center text-xs font-semibold transition-transform transform hover:scale-105 hover:shadow-2xl"
-            ><i class="bx bxl-twitter text-lg"></i
+            class="flex justify-center items-center w-18 h-18 bg-transparent border-2 border-yellow-300 text-yellow-300 text-3xl rounded-full transition-transform duration-300 ease-in-out hover:text-white hover:scale-125 hover:-translate-y-1 hover:bg-yellow-300 hover:shadow-lg"
+            ><i class="bx bxl-twitter p-1.5"></i
           ></a>
         </div>
 
         <!-- 下載履歷 -->
-        <div class="flex items-center space-x-3 pt-2">
+        <div class="flex items-center space-x-3 pt-4">
           <a
             href="#"
             class="bg-yellow-300 text-black shadow-lg rounded-full w-auto h-auto p-3 flex items-center justify-center text-xs font-semibold transition-transform transform hover:scale-105 hover:shadow-2xl"
@@ -107,17 +115,18 @@
         </div>
       </div>
 
+      <!-- 大頭貼 -->
       <div class="w-full md:w-[40%] flex justify-center items-center">
         <img
           src="https://picsum.photos/200/200"
           alt=""
-          class="rounded-full relative w-[400px] cursor-pointer duration-400 ease-in-out hover:scale-105 transition duration-300 hover:shadow-yellow-300 hover:shadow-2xl"
+          class="rounded-full relative w-[400px] cursor-pointer duration-400 ease-in-out hover:scale-105 transition duration-300 hover:shadow-[0_0_30px_10px_rgba(255,255,0,0.7)]"
         />
       </div>
     </section>
 
     <!-- 經歷 -->
-    <section class="pt-8">
+    <section id="experience" class="pt-8">
       <h2 class="text-4xl">經歷</h2>
 
       <div class="pl-4 pt-4 flex flex-col">
@@ -167,7 +176,7 @@
     </section>
 
     <!-- 技能 -->
-    <section class="pt-8">
+    <section id="skills" class="pt-8">
       <h2 class="text-4xl">技能</h2>
       <div class="flex flex-wrap justify-center items-center gap-4 pt-4">
         <div class="w-[180px] flex flex-col justify-center items-center">
@@ -206,7 +215,7 @@
     </section>
 
     <!-- 作品集 -->
-    <section class="pt-8">
+    <section id="portfolio" class="pt-8">
       <h2 class="text-4xl">作品集</h2>
       <div
         class="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4 pt-4"
@@ -280,7 +289,7 @@
     </section>
 
     <!-- 聯絡我 -->
-    <section class="pt-8">
+    <section id="contact" class="pt-8">
       <h2 class="text-4xl text-center mb-6">聯絡我</h2>
       <form class="flex flex-col space-y-4 max-w-lg mx-auto">
         <input
@@ -305,17 +314,33 @@
       </form>
     </section>
 
-    <footer class="flex flex-col justify-center items-center pt-6">
-      <div class="">
-        <a href="#"><i class="bx bxl-linkedin"></i></a>
-        <a href="#"><i class="bx bxl-github"></i></a>
-        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
-        <a href="#"><i class="bx bxl-twitter"></i></a>
+    <footer class="flex flex-col justify-center items-center pt-12">
+      <div class="flex items-center space-x-4">
+        <a
+          href="#"
+          class="flex justify-center items-center w-9 h-9 bg-transparent border-2 border-yellow-300 text-yellow-300 text-xl rounded-full transition-transform duration-300 ease-in-out hover:text-white hover:scale-125 hover:-translate-y-1 hover:bg-yellow-300 hover:shadow-lg"
+          ><i class="bx bxl-facebook-square"></i
+        ></a>
+        <a
+          href="#"
+          class="flex justify-center items-center w-9 h-9 bg-transparent border-2 border-yellow-300 text-yellow-300 text-xl rounded-full transition-transform duration-300 ease-in-out hover:text-white hover:scale-125 hover:-translate-y-1 hover:bg-yellow-300 hover:shadow-lg"
+          ><i class="bx bxl-instagram-alt"></i
+        ></a>
+        <a
+          href="#"
+          class="flex justify-center items-center w-9 h-9 bg-transparent border-2 border-yellow-300 text-yellow-300 text-xl rounded-full transition-transform duration-300 ease-in-out hover:text-white hover:scale-125 hover:-translate-y-1 hover:bg-yellow-300 hover:shadow-lg"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a
+          href="#"
+          class="flex justify-center items-center w-9 h-9 bg-transparent border-2 border-yellow-300 text-yellow-300 text-xl rounded-full transition-transform duration-300 ease-in-out hover:text-white hover:scale-125 hover:-translate-y-1 hover:bg-yellow-300 hover:shadow-lg"
+          ><i class="bx bxl-twitter"></i
+        ></a>
       </div>
-      <ul class="flex justify-center items-center space-x-6 pt-3">
+      <ul class="flex justify-center items-center space-x-6 pt-8">
         <li>
           <a
-            href="#"
+            href="#home"
             class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
             >主頁</a
           >
@@ -323,7 +348,7 @@
 
         <li>
           <a
-            href="#"
+            href="#experience"
             class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
             >經歷</a
           >
@@ -331,7 +356,7 @@
 
         <li>
           <a
-            href="#"
+            href="#skills"
             class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
             >技能</a
           >
@@ -339,7 +364,7 @@
 
         <li>
           <a
-            href="#"
+            href="#portfolio"
             class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
             >作品集</a
           >
@@ -347,13 +372,13 @@
 
         <li>
           <a
-            href="#"
+            href="#contact"
             class="hover:text-yellow-300 hover:font-bold hover:underline hover:underline-offset-8 transition duration-500"
             >聯絡我</a
           >
         </li>
       </ul>
-      <p class="text-sm pt-4 pb-4">© 2021 English Vegetable Cheater Pro</p>
+      <p class="text-sm pt-8 pb-4">© 2021 English Vegetable Cheater Pro</p>
     </footer>
   </body>
 
